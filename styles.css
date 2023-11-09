@@ -118,6 +118,50 @@ footer {
     color: #333;
 }
 
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between cards */
+    justify-content: center; /* Center cards in the container */
+}
+
+.experience-card {
+    background-color: var(--color-lavender); /* Or any preferred color */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.333% - 20px); /* Three cards per row, minus gap */
+    box-sizing: border-box;
+}
+
+.experience-card h3 {
+    margin-top: 0;
+}
+
+.experience-company,
+.experience-duration {
+    color: #555; /* Subdued text color */
+    font-size: 0.9em;
+}
+
+.experience-description {
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        width: 100%; /* Full width cards on very small screens */
+    }
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     nav ul li {
