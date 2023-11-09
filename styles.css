@@ -1,0 +1,131 @@
+/* Define the colors */
+:root {
+    --color-lime: #E3F8CD; /* Lime, a soft and pale green */
+    --color-periwinkle: #CCCCFF; /* Periwinkle, a soft pastel blue */
+    --color-chartreuse: #DFF8EB; /* Chartreuse, a pale green with a slight yellowish tint */
+    --color-lavender: #E6E6FA; /* Lavender, a soft violet */
+}
+
+/* Add your styles here */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: var(--color-lavender); /* Overall background color */
+}
+
+#profile-pic {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin: 10px 0;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    background: var(--color-chartreuse); /* Chartreuse for the header */
+    color: #333; /* Dark text for better readability on light background */
+}
+
+header h1, header p {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: var(--color-periwinkle); /* Periwinkle for the navbar */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text for readability */
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: var(--color-lime); /* Lime for hover/focus */
+    color: #333;
+}
+
+section {
+    background: #ffffff; /* White background for content sections */
+    margin-top: 20px;
+}
+
+/* Skills, Certifications, and Education Section Backgrounds */
+#skills, #certifications, #education {
+    background: var(--color-lavender); /* Lavender background for these sections */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+}
+
+footer {
+    background: var(--color-periwinkle);
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#project-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+#project-nav ul li a {
+    text-decoration: none;
+    background-color: var(--color-chartreuse); /* Use your chosen color here */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#project-nav ul li a:hover,
+#project-nav ul li a:focus {
+    background-color: var(--color-lime); /* A lighter or different color for hover */
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
