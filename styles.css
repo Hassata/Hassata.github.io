@@ -150,6 +150,27 @@ footer {
     margin-top: 10px;
 }
 
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the start of the container */
+    gap: 20px; /* Adds space between image and text */
+}
+
+#profile-pic {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+}
+
+.about-text {
+    flex-grow: 1; /* Allows text container to fill remaining space */
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+
 @media (max-width: 768px) {
     .experience-card {
         width: calc(50% - 20px); /* Two cards per row on smaller screens */
